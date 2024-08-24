@@ -16,16 +16,20 @@ const NewsCard:React.FC<NewsCardProps> = ({
         <div className="w-full flex justify-center">
             <div className="flex flex-col gap-2 h-full">
                 <div>
-                    <img src={imageUrl ? imageUrl : "/news.jpeg"} alt="News image" className="w-full sm:h-52" />
+                    <img src={imageUrl ? imageUrl : "/news.jpeg"} alt="News image" className="w-full sm:h-52 h-60" />
                 </div>
-                <div className="text-lg font-bold flex-grow">
-                    {title}
-                </div>
-                <div className="text-gray-600 flex-grow">
-                    {desc}
+                <div className="flex-grow">
+                    <div className="flex flex-col gap-1">
+                        <div className="text-xl font-bold text-[#3c3030] font-['Georgia']">
+                            {title}
+                        </div>
+                        <div className="text-gray-600 font-[' Cambria'] ">
+                            {desc}
+                        </div>
+                    </div>
                 </div>
                 <div className="flex justify-start items-center mt-auto text-sm gap-5">
-                    <div>
+                    <div className="">
                         Read full article
                     </div>
                     <div className="text-red-600 cursor-pointer">
@@ -38,6 +42,7 @@ const NewsCard:React.FC<NewsCardProps> = ({
                 </div>
             </div>
         </div>
+
     );
 }
 
