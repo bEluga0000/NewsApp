@@ -11,27 +11,27 @@ A Next.js application for displaying trending news articles with dynamic search 
 - **Loading State**: Show loading indicators while fetching data.
 - **Error Handling**: Display error messages if the API call fails.
 
-##Usage
-- **Search for News: Enter keywords into the search input to find news articles.
-- **View Articles: Click on articles to read more details.
+## Usage
+- ** Search for News: Enter keywords into the search input to find news articles.
+- ** View Articles: Click on articles to read more details.
 
-##Components
-- **AppSkeleton
+## Components
+- ** AppSkeleton
 
   Displays a loading skeleton while the news data is being fetched.
 
-- **AppFooter
+- ** AppFooter
 
   Displays the footer of the application with copyright information.
 
-- **AppHeader
+- ** AppHeader
   
   Displays the header of the application with the title and navigation.
 
-- **NewsCard
+- ** NewsCard
   
   Displays individual news articles with an image, title, description, and a link to read more.
 
-- **API Integration
+- ** API Integration
   
   The application uses NewsAPI to fetch news articles. The API key is required for authentication and should be stored in the .env.local file.
