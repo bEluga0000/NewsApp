@@ -3,7 +3,7 @@ import geoip from "geoip-lite";
 
 export async function GET(req: NextRequest) {
     const forwardedFor = req.headers.get('x-forwarded-for');
-    const clientIp = forwardedFor ? forwardedFor.split(',')[0].trim() : req.ip;
+    const clientIp =  req.ip;
     const ip = forwardedFor?.split(',')[0].trim();
     const geo = ip ? geoip.lookup(ip) : null;
 
